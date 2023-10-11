@@ -28,7 +28,7 @@ struct QuoteDisplayView: View {
     }
 }
 struct ContentView: View {
-    @AppStorage("selectedFont") var fontSelection: Int = 0
+    @State var fontSelection: Int = 0
     @State var quoteIndex: Int = randomQuoteIndex()
     @State var settingsShown: Bool = false
     

@@ -36,7 +36,7 @@ func withinFontIndex(x: Int) -> Int {
 }
 
 func withinQuoteIndex(x: Int) -> Int {
-    return withinBounds(x: x, min: 0, max: fonts.count)
+    return withinBounds(x: x, min: 0, max: quotes.count)
 }
 
 func randomQuoteIndex() -> Int {

@@ -318,7 +318,7 @@
 					};
 				};
 			};
-			buildConfigurationList = CAD1BDB52AD5E96D00E5D8CF /* Build configuration list for PBXProject "apopthegmata" */;
+			buildConfigurationList = CAD1BDB52AD5E96D00E5D8CF /* Build configuration list for PBXProject "Apopthegmata" */;
 			compatibilityVersion = "Xcode 14.0";
 			developmentRegion = en;
 			hasScannedForEncodings = 0;
@@ -472,7 +472,7 @@
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
 				COPY_PHASE_STRIP = NO;
-				CURRENT_PROJECT_VERSION = 9;
+				CURRENT_PROJECT_VERSION = 11;
 				DEBUG_INFORMATION_FORMAT = dwarf;
 				DEVELOPMENT_TEAM = KFQR26H7RW;
 				ENABLE_HARDENED_RUNTIME = YES;
@@ -543,7 +543,7 @@
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
 				COPY_PHASE_STRIP = NO;
-				CURRENT_PROJECT_VERSION = 9;
+				CURRENT_PROJECT_VERSION = 11;
 				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
 				DEVELOPMENT_TEAM = KFQR26H7RW;
 				ENABLE_HARDENED_RUNTIME = YES;
@@ -764,7 +764,7 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		CAD1BDB52AD5E96D00E5D8CF /* Build configuration list for PBXProject "apopthegmata" */ = {
+		CAD1BDB52AD5E96D00E5D8CF /* Build configuration list for PBXProject "Apopthegmata" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				CAD1BDE02AD5E96F00E5D8CF /* Debug */,
