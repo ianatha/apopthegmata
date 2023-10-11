@@ -37,7 +37,7 @@ struct ApopthegmataWidgetEntryView : View {
     
     var body: some View {
         VStack {
-            QuoteDisplayView(text: quotes[withinQuoteIndex(x: entry.quoteIndex)], font: fonts[withinFontIndex(x: entry.fontIndex)])
+            QuoteDisplayView(text: quotes[withinQuoteIndex(x: entry.quoteIndex)], font: fonts[withinFontIndex(x: entry.fontIndex)], inWidget: true)
         }
     }
 }

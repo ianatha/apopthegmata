@@ -3,20 +3,16 @@ import SwiftUI
 struct QuoteDisplayView: View {
     var text: String
     var font: String
+    var inWidget: Bool = false
     
     var body: some View {
-        if text.contains("\n") {
-            Text(text)
-                .font(.custom(font, size: 46))
-                .padding()
-        } else {
-            Text(text)
-                .font(.custom(font, size: 46))
-                .multilineTextAlignment(.center)
-                .padding()
-        }
+        Text(text)
+            .font(.custom(font, size: inWidget ? 32 : 46))
+            .multilineTextAlignment(.center)
+            .padding()
     }
 }
+
 struct ContentView: View {
     @State var fontSelection: Int = 0
     @State var quoteIndex: Int = randomQuoteIndex()
