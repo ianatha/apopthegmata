@@ -1,15 +1,5 @@
 import SwiftUI
 
-struct GlassCard<ContentView: View>: View {
-    var content: ContentView
-    
-    var body: some View {
-        VStack {
-            content
-        }
-    }
-}
-
 struct QuoteDisplayView: View {
     var text: String
     var font: String
