@@ -1,5 +1,6 @@
 import SwiftUI
 import CoreFoundation
+import WidgetKit
 
 extension String {
     func removingAccents() -> String {
@@ -33,10 +34,30 @@ struct QuoteDisplayView: View {
     }
 }
 
+struct GlassCard: ViewModifier {
+    func body(content: Content) -> some View {
+        if #available(iOS 15.0, *) {
+            content
+                .padding()
+                .frame(height: 50)
+                .background(.ultraThinMaterial)
+                .cornerRadius(14)
+        } else {
+            // Fallback on earlier versions
+            content
+                .padding()
+                .frame(height: 50)
+                .cornerRadius(14)
+        }
+    }
+}
+
 struct ContentView: View {
     @State var fontSelection: Int = 0
-    @State var quoteIndex: Int = randomQuoteIndex()
+    @State var quoteIndex: Int = 0
     @State var settingsShown: Bool = false
+    @AppStorage("dismissedWidgetAlert_10") var dismissedWidgetAlert: Bool = false
+    @State var isWidgetInstalled: Bool?
     
     var body: some View {
         let q = quotes[withinQuoteIndex(x: quoteIndex)]
@@ -57,6 +78,42 @@ struct ContentView: View {
                 maxWidth: .infinity,
                 minHeight:geometry.size.height,
                 maxHeight: .infinity)
+            .onAppear {
+                WidgetCenter.shared.getCurrentConfigurations { res in
+                    switch res {
+                    case .success(let widgets):
+                        self.isWidgetInstalled = widgets.count != 0
+                    case .failure:
+                        self.isWidgetInstalled = false
+                    }
+                }
+            }
+            .overlay(alignment: .center) {
+                if isWidgetInstalled == false && !dismissedWidgetAlert {
+                    VStack {
+                        Spacer()
+                        Spacer()
+                        Spacer()
+                        Spacer()
+                        Spacer()
+                        Spacer()
+                        Spacer()
+                        HStack {
+                            Text("Check out the Home Screen widget!")
+                        }.modifier(GlassCard())
+                            .overlay(alignment: .topTrailing, content: {
+                                Button(action: {
+                                 dismissedWidgetAlert = true
+                                }, label: {
+                                    ZStack {
+                                        Image(systemName: "xmark.circle.fill").foregroundColor(.red)
+                                    }
+                                }).offset(x: 8, y: -8)
+                            })
+                        Spacer()
+                    }
+                }
+            }
             .overlay(alignment: .bottom) {
                 HStack {
                     Button(action: {
@@ -65,7 +122,9 @@ struct ContentView: View {
                         }
                     }) {
                         Image(systemName: "arrow.clockwise")
-                    }.padding(.horizontal)
+                    }
+                    .padding(.horizontal)
+                    .contentShape(Rectangle())
                     Spacer()
                     if quotes[withinQuoteIndex(x: quoteIndex)].f == nil {
                         HStack {
