@@ -17,7 +17,7 @@ struct Provider: AppIntentTimelineProvider {
         let currentDate = Date()
         for hourOffset in 0 ..< quotes.count {
             let entryDate = Calendar.current.date(byAdding: .hour, value: hourOffset, to: currentDate)!
-            let entry = SimpleEntry(configuration: configuration, date: entryDate, quoteIndex: hourOffset, fontIndex: hourOffset)
+            let entry = SimpleEntry(configuration: configuration, date: entryDate, quoteIndex: 0, fontIndex: hourOffset)
             entries.append(entry)
         }
         
@@ -44,6 +44,9 @@ struct ApopthegmataWidgetEntryView : View {
 }
 
 struct ApopthegmataWidget: Widget {
+    static let TITLE = "Ancient Greek sayings with beautiful typography"
+    static let DESCRIPTION = "Ancient Greek sayings with beautiful typography, updated at a time interval of your choosing."
+    
     let kind: String = "widget"
     
     var body: some WidgetConfiguration {
@@ -52,6 +55,9 @@ struct ApopthegmataWidget: Widget {
                 ApopthegmataWidgetEntryView(entry: entry)
                     .containerBackground(.fill.tertiary, for: .widget)
             }
+            .configurationDisplayName(ApopthegmataWidget.TITLE)
+            .description(ApopthegmataWidget.DESCRIPTION)
+            .supportedFamilies([.systemMedium])
     }
 }
 
