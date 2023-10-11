@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>UIAppFonts</key>
+	<array>
+		<string>Fonts/GFSBaskerville.otf</string>
+		<string>Fonts/GFSBodoniClassic.otf</string>
+		<string>Fonts/GFSComplutum.otf</string>
+		<string>Fonts/GFSDecker.otf</string>
+		<string>Fonts/GFSDidot_Classic.otf</string>
+		<string>Fonts/GFSGazis.otf</string>
+		<string>Fonts/GFSGoschenItalic.otf</string>
+		<string>Fonts/GFSOrpheusClassic.otf</string>
+		<string>Fonts/GFSPhilostratos.otf</string>
+		<string>Fonts/GFSPorson.otf</string>
+		<string>Fonts/GFSSolomos.otf</string>
+	</array>
+	<key>UIBackgroundModes</key>
+	<array>
+		<string>remote-notification</string>
+	</array>
+</dict>
+</plist>

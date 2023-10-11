@@ -1,0 +1,815 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 56;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		CA4C84F62AD6C78200F0185E /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CA4C84F52AD6C78200F0185E /* Assets.xcassets */; };
+		CA4C84F72AD6C78200F0185E /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CA4C84F52AD6C78200F0185E /* Assets.xcassets */; };
+		CAB83F302AD6B2B000244923 /* Data.swift in Sources */ = {isa = PBXBuildFile; fileRef = CAB83F2F2AD6B2B000244923 /* Data.swift */; };
+		CAB83F312AD6B30600244923 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CAD1BDBF2AD5E96D00E5D8CF /* ContentView.swift */; };
+		CAB83F322AD6B31C00244923 /* Data.swift in Sources */ = {isa = PBXBuildFile; fileRef = CAB83F2F2AD6B2B000244923 /* Data.swift */; };
+		CAB83F332AD6B3C500244923 /* ApopthegmataWidget.appex in Embed Foundation Extensions */ = {isa = PBXBuildFile; fileRef = CAD1BDFC2AD5F85A00E5D8CF /* ApopthegmataWidget.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		CAD1BDBE2AD5E96D00E5D8CF /* ApopthegmataApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = CAD1BDBD2AD5E96D00E5D8CF /* ApopthegmataApp.swift */; };
+		CAD1BDC02AD5E96D00E5D8CF /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CAD1BDBF2AD5E96D00E5D8CF /* ContentView.swift */; };
+		CAD1BDC82AD5E96E00E5D8CF /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CAD1BDC72AD5E96E00E5D8CF /* Preview Assets.xcassets */; };
+		CAD1BDD32AD5E96F00E5D8CF /* ApopthegmataTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = CAD1BDD22AD5E96F00E5D8CF /* ApopthegmataTests.swift */; };
+		CAD1BDDD2AD5E96F00E5D8CF /* ApopthegmataUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = CAD1BDDC2AD5E96F00E5D8CF /* ApopthegmataUITests.swift */; };
+		CAD1BDDF2AD5E96F00E5D8CF /* ApopthegmataUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = CAD1BDDE2AD5E96F00E5D8CF /* ApopthegmataUITestsLaunchTests.swift */; };
+		CAD1BDF72AD5F61900E5D8CF /* Fonts in Resources */ = {isa = PBXBuildFile; fileRef = CAD1BDF62AD5F61900E5D8CF /* Fonts */; };
+		CAD1BDFF2AD5F85A00E5D8CF /* WidgetKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CAD1BDFE2AD5F85A00E5D8CF /* WidgetKit.framework */; };
+		CAD1BE012AD5F85A00E5D8CF /* SwiftUI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CAD1BE002AD5F85A00E5D8CF /* SwiftUI.framework */; };
+		CAD1BE042AD5F85A00E5D8CF /* ApopthegmataWidgetBundle.swift in Sources */ = {isa = PBXBuildFile; fileRef = CAD1BE032AD5F85A00E5D8CF /* ApopthegmataWidgetBundle.swift */; };
+		CAD1BE082AD5F85A00E5D8CF /* ApopthegmataWidget.swift in Sources */ = {isa = PBXBuildFile; fileRef = CAD1BE072AD5F85A00E5D8CF /* ApopthegmataWidget.swift */; };
+		CAD1BE0A2AD5F85A00E5D8CF /* AppIntent.swift in Sources */ = {isa = PBXBuildFile; fileRef = CAD1BE092AD5F85A00E5D8CF /* AppIntent.swift */; };
+		CAD6F16F2AD5FF01004ECD6E /* Fonts in Resources */ = {isa = PBXBuildFile; fileRef = CAD1BDF62AD5F61900E5D8CF /* Fonts */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		CAB83F342AD6B3C500244923 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = CAD1BDB22AD5E96D00E5D8CF /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = CAD1BDFB2AD5F85A00E5D8CF;
+			remoteInfo = widgetExtension;
+		};
+		CAD1BDCF2AD5E96E00E5D8CF /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = CAD1BDB22AD5E96D00E5D8CF /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = CAD1BDB92AD5E96D00E5D8CF;
+			remoteInfo = apopthegmata;
+		};
+		CAD1BDD92AD5E96F00E5D8CF /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = CAD1BDB22AD5E96D00E5D8CF /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = CAD1BDB92AD5E96D00E5D8CF;
+			remoteInfo = apopthegmata;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		CAB83F362AD6B3C500244923 /* Embed Foundation Extensions */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 13;
+			files = (
+				CAB83F332AD6B3C500244923 /* ApopthegmataWidget.appex in Embed Foundation Extensions */,
+			);
+			name = "Embed Foundation Extensions";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		CA4C84F52AD6C78200F0185E /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		CAB83F2F2AD6B2B000244923 /* Data.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Data.swift; sourceTree = "<group>"; };
+		CAD1BDBA2AD5E96D00E5D8CF /* Apopthegmata.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Apopthegmata.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		CAD1BDBD2AD5E96D00E5D8CF /* ApopthegmataApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ApopthegmataApp.swift; sourceTree = "<group>"; };
+		CAD1BDBF2AD5E96D00E5D8CF /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		CAD1BDC52AD5E96E00E5D8CF /* ApopthegmataApp.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = ApopthegmataApp.entitlements; sourceTree = "<group>"; };
+		CAD1BDC72AD5E96E00E5D8CF /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		CAD1BDC92AD5E96E00E5D8CF /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		CAD1BDCE2AD5E96E00E5D8CF /* AppTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = AppTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		CAD1BDD22AD5E96F00E5D8CF /* ApopthegmataTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ApopthegmataTests.swift; sourceTree = "<group>"; };
+		CAD1BDD82AD5E96F00E5D8CF /* AppUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = AppUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		CAD1BDDC2AD5E96F00E5D8CF /* ApopthegmataUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ApopthegmataUITests.swift; sourceTree = "<group>"; };
+		CAD1BDDE2AD5E96F00E5D8CF /* ApopthegmataUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ApopthegmataUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		CAD1BDF62AD5F61900E5D8CF /* Fonts */ = {isa = PBXFileReference; lastKnownFileType = folder; path = Fonts; sourceTree = "<group>"; };
+		CAD1BDFC2AD5F85A00E5D8CF /* ApopthegmataWidget.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = ApopthegmataWidget.appex; sourceTree = BUILT_PRODUCTS_DIR; };
+		CAD1BDFE2AD5F85A00E5D8CF /* WidgetKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = WidgetKit.framework; path = System/Library/Frameworks/WidgetKit.framework; sourceTree = SDKROOT; };
+		CAD1BE002AD5F85A00E5D8CF /* SwiftUI.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SwiftUI.framework; path = System/Library/Frameworks/SwiftUI.framework; sourceTree = SDKROOT; };
+		CAD1BE032AD5F85A00E5D8CF /* ApopthegmataWidgetBundle.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ApopthegmataWidgetBundle.swift; sourceTree = "<group>"; };
+		CAD1BE072AD5F85A00E5D8CF /* ApopthegmataWidget.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ApopthegmataWidget.swift; sourceTree = "<group>"; };
+		CAD1BE092AD5F85A00E5D8CF /* AppIntent.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppIntent.swift; sourceTree = "<group>"; };
+		CAD1BE0D2AD5F85C00E5D8CF /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		CAD1BDB72AD5E96D00E5D8CF /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		CAD1BDCB2AD5E96E00E5D8CF /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		CAD1BDD52AD5E96F00E5D8CF /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		CAD1BDF92AD5F85A00E5D8CF /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CAD1BE012AD5F85A00E5D8CF /* SwiftUI.framework in Frameworks */,
+				CAD1BDFF2AD5F85A00E5D8CF /* WidgetKit.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		CA4C84F42AD6C6A300F0185E /* ApopthegmataShared */ = {
+			isa = PBXGroup;
+			children = (
+				CA4C84F52AD6C78200F0185E /* Assets.xcassets */,
+				CAB83F2F2AD6B2B000244923 /* Data.swift */,
+				CAD1BDF62AD5F61900E5D8CF /* Fonts */,
+			);
+			path = ApopthegmataShared;
+			sourceTree = "<group>";
+		};
+		CAD1BDB12AD5E96D00E5D8CF = {
+			isa = PBXGroup;
+			children = (
+				CA4C84F42AD6C6A300F0185E /* ApopthegmataShared */,
+				CAD1BDBC2AD5E96D00E5D8CF /* ApopthegmataApp */,
+				CAD1BDD12AD5E96E00E5D8CF /* ApopthegmataAppTests */,
+				CAD1BDDB2AD5E96F00E5D8CF /* ApopthegmataAppUITests */,
+				CAD1BE022AD5F85A00E5D8CF /* ApopthegmataWidget */,
+				CAD1BDFD2AD5F85A00E5D8CF /* Frameworks */,
+				CAD1BDBB2AD5E96D00E5D8CF /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		CAD1BDBB2AD5E96D00E5D8CF /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				CAD1BDBA2AD5E96D00E5D8CF /* Apopthegmata.app */,
+				CAD1BDCE2AD5E96E00E5D8CF /* AppTests.xctest */,
+				CAD1BDD82AD5E96F00E5D8CF /* AppUITests.xctest */,
+				CAD1BDFC2AD5F85A00E5D8CF /* ApopthegmataWidget.appex */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		CAD1BDBC2AD5E96D00E5D8CF /* ApopthegmataApp */ = {
+			isa = PBXGroup;
+			children = (
+				CAD1BDBD2AD5E96D00E5D8CF /* ApopthegmataApp.swift */,
+				CAD1BDBF2AD5E96D00E5D8CF /* ContentView.swift */,
+				CAD1BDC52AD5E96E00E5D8CF /* ApopthegmataApp.entitlements */,
+				CAD1BDC92AD5E96E00E5D8CF /* Info.plist */,
+				CAD1BDC62AD5E96E00E5D8CF /* Preview Content */,
+			);
+			path = ApopthegmataApp;
+			sourceTree = "<group>";
+		};
+		CAD1BDC62AD5E96E00E5D8CF /* Preview Content */ = {
+			isa = PBXGroup;
+			children = (
+				CAD1BDC72AD5E96E00E5D8CF /* Preview Assets.xcassets */,
+			);
+			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		CAD1BDD12AD5E96E00E5D8CF /* ApopthegmataAppTests */ = {
+			isa = PBXGroup;
+			children = (
+				CAD1BDD22AD5E96F00E5D8CF /* ApopthegmataTests.swift */,
+			);
+			path = ApopthegmataAppTests;
+			sourceTree = "<group>";
+		};
+		CAD1BDDB2AD5E96F00E5D8CF /* ApopthegmataAppUITests */ = {
+			isa = PBXGroup;
+			children = (
+				CAD1BDDC2AD5E96F00E5D8CF /* ApopthegmataUITests.swift */,
+				CAD1BDDE2AD5E96F00E5D8CF /* ApopthegmataUITestsLaunchTests.swift */,
+			);
+			path = ApopthegmataAppUITests;
+			sourceTree = "<group>";
+		};
+		CAD1BDFD2AD5F85A00E5D8CF /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				CAD1BDFE2AD5F85A00E5D8CF /* WidgetKit.framework */,
+				CAD1BE002AD5F85A00E5D8CF /* SwiftUI.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		CAD1BE022AD5F85A00E5D8CF /* ApopthegmataWidget */ = {
+			isa = PBXGroup;
+			children = (
+				CAD1BE032AD5F85A00E5D8CF /* ApopthegmataWidgetBundle.swift */,
+				CAD1BE072AD5F85A00E5D8CF /* ApopthegmataWidget.swift */,
+				CAD1BE092AD5F85A00E5D8CF /* AppIntent.swift */,
+				CAD1BE0D2AD5F85C00E5D8CF /* Info.plist */,
+			);
+			path = ApopthegmataWidget;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		CAD1BDB92AD5E96D00E5D8CF /* Apopthegmata */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = CAD1BDE22AD5E96F00E5D8CF /* Build configuration list for PBXNativeTarget "Apopthegmata" */;
+			buildPhases = (
+				CAD1BDB62AD5E96D00E5D8CF /* Sources */,
+				CAD1BDB72AD5E96D00E5D8CF /* Frameworks */,
+				CAD1BDB82AD5E96D00E5D8CF /* Resources */,
+				CAB83F362AD6B3C500244923 /* Embed Foundation Extensions */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				CAB83F352AD6B3C500244923 /* PBXTargetDependency */,
+			);
+			name = Apopthegmata;
+			packageProductDependencies = (
+			);
+			productName = apopthegmata;
+			productReference = CAD1BDBA2AD5E96D00E5D8CF /* Apopthegmata.app */;
+			productType = "com.apple.product-type.application";
+		};
+		CAD1BDCD2AD5E96E00E5D8CF /* AppTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = CAD1BDE52AD5E96F00E5D8CF /* Build configuration list for PBXNativeTarget "AppTests" */;
+			buildPhases = (
+				CAD1BDCA2AD5E96E00E5D8CF /* Sources */,
+				CAD1BDCB2AD5E96E00E5D8CF /* Frameworks */,
+				CAD1BDCC2AD5E96E00E5D8CF /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				CAD1BDD02AD5E96E00E5D8CF /* PBXTargetDependency */,
+			);
+			name = AppTests;
+			productName = apopthegmataTests;
+			productReference = CAD1BDCE2AD5E96E00E5D8CF /* AppTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		CAD1BDD72AD5E96F00E5D8CF /* AppUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = CAD1BDE82AD5E96F00E5D8CF /* Build configuration list for PBXNativeTarget "AppUITests" */;
+			buildPhases = (
+				CAD1BDD42AD5E96F00E5D8CF /* Sources */,
+				CAD1BDD52AD5E96F00E5D8CF /* Frameworks */,
+				CAD1BDD62AD5E96F00E5D8CF /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				CAD1BDDA2AD5E96F00E5D8CF /* PBXTargetDependency */,
+			);
+			name = AppUITests;
+			productName = apopthegmataUITests;
+			productReference = CAD1BDD82AD5E96F00E5D8CF /* AppUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+		CAD1BDFB2AD5F85A00E5D8CF /* ApopthegmataWidget */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = CAD1BE112AD5F85C00E5D8CF /* Build configuration list for PBXNativeTarget "ApopthegmataWidget" */;
+			buildPhases = (
+				CAD1BDF82AD5F85A00E5D8CF /* Sources */,
+				CAD1BDF92AD5F85A00E5D8CF /* Frameworks */,
+				CAD1BDFA2AD5F85A00E5D8CF /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = ApopthegmataWidget;
+			productName = widgetExtension;
+			productReference = CAD1BDFC2AD5F85A00E5D8CF /* ApopthegmataWidget.appex */;
+			productType = "com.apple.product-type.app-extension";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		CAD1BDB22AD5E96D00E5D8CF /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1500;
+				LastUpgradeCheck = 1500;
+				TargetAttributes = {
+					CAD1BDB92AD5E96D00E5D8CF = {
+						CreatedOnToolsVersion = 15.0;
+					};
+					CAD1BDCD2AD5E96E00E5D8CF = {
+						CreatedOnToolsVersion = 15.0;
+						TestTargetID = CAD1BDB92AD5E96D00E5D8CF;
+					};
+					CAD1BDD72AD5E96F00E5D8CF = {
+						CreatedOnToolsVersion = 15.0;
+						TestTargetID = CAD1BDB92AD5E96D00E5D8CF;
+					};
+					CAD1BDFB2AD5F85A00E5D8CF = {
+						CreatedOnToolsVersion = 15.0;
+					};
+				};
+			};
+			buildConfigurationList = CAD1BDB52AD5E96D00E5D8CF /* Build configuration list for PBXProject "apopthegmata" */;
+			compatibilityVersion = "Xcode 14.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = CAD1BDB12AD5E96D00E5D8CF;
+			packageReferences = (
+			);
+			productRefGroup = CAD1BDBB2AD5E96D00E5D8CF /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				CAD1BDB92AD5E96D00E5D8CF /* Apopthegmata */,
+				CAD1BDFB2AD5F85A00E5D8CF /* ApopthegmataWidget */,
+				CAD1BDCD2AD5E96E00E5D8CF /* AppTests */,
+				CAD1BDD72AD5E96F00E5D8CF /* AppUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		CAD1BDB82AD5E96D00E5D8CF /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CAD1BDC82AD5E96E00E5D8CF /* Preview Assets.xcassets in Resources */,
+				CA4C84F62AD6C78200F0185E /* Assets.xcassets in Resources */,
+				CAD1BDF72AD5F61900E5D8CF /* Fonts in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		CAD1BDCC2AD5E96E00E5D8CF /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		CAD1BDD62AD5E96F00E5D8CF /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		CAD1BDFA2AD5F85A00E5D8CF /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CA4C84F72AD6C78200F0185E /* Assets.xcassets in Resources */,
+				CAD6F16F2AD5FF01004ECD6E /* Fonts in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		CAD1BDB62AD5E96D00E5D8CF /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CAD1BDC02AD5E96D00E5D8CF /* ContentView.swift in Sources */,
+				CAD1BDBE2AD5E96D00E5D8CF /* ApopthegmataApp.swift in Sources */,
+				CAB83F302AD6B2B000244923 /* Data.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		CAD1BDCA2AD5E96E00E5D8CF /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CAD1BDD32AD5E96F00E5D8CF /* ApopthegmataTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		CAD1BDD42AD5E96F00E5D8CF /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CAD1BDDD2AD5E96F00E5D8CF /* ApopthegmataUITests.swift in Sources */,
+				CAD1BDDF2AD5E96F00E5D8CF /* ApopthegmataUITestsLaunchTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		CAD1BDF82AD5F85A00E5D8CF /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CAD1BE082AD5F85A00E5D8CF /* ApopthegmataWidget.swift in Sources */,
+				CAB83F322AD6B31C00244923 /* Data.swift in Sources */,
+				CAD1BE0A2AD5F85A00E5D8CF /* AppIntent.swift in Sources */,
+				CAB83F312AD6B30600244923 /* ContentView.swift in Sources */,
+				CAD1BE042AD5F85A00E5D8CF /* ApopthegmataWidgetBundle.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		CAB83F352AD6B3C500244923 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = CAD1BDFB2AD5F85A00E5D8CF /* ApopthegmataWidget */;
+			targetProxy = CAB83F342AD6B3C500244923 /* PBXContainerItemProxy */;
+		};
+		CAD1BDD02AD5E96E00E5D8CF /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = CAD1BDB92AD5E96D00E5D8CF /* Apopthegmata */;
+			targetProxy = CAD1BDCF2AD5E96E00E5D8CF /* PBXContainerItemProxy */;
+		};
+		CAD1BDDA2AD5E96F00E5D8CF /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = CAD1BDB92AD5E96D00E5D8CF /* Apopthegmata */;
+			targetProxy = CAD1BDD92AD5E96F00E5D8CF /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		CAD1BDE02AD5E96F00E5D8CF /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				CURRENT_PROJECT_VERSION = 9;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				DEVELOPMENT_TEAM = KFQR26H7RW;
+				ENABLE_HARDENED_RUNTIME = YES;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				INFOPLIST_KEY_CFBundleDisplayName = "Αποφθέγματα";
+				INFOPLIST_KEY_NSHumanReadableCopyright = "2023 Apeiromont, Inc.";
+				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MARKETING_VERSION = 1.0;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "DEBUG $(inherited)";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		CAD1BDE12AD5E96F00E5D8CF /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				CURRENT_PROJECT_VERSION = 9;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				DEVELOPMENT_TEAM = KFQR26H7RW;
+				ENABLE_HARDENED_RUNTIME = YES;
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				INFOPLIST_KEY_CFBundleDisplayName = "Αποφθέγματα";
+				INFOPLIST_KEY_NSHumanReadableCopyright = "2023 Apeiromont, Inc.";
+				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MARKETING_VERSION = 1.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		CAD1BDE32AD5E96F00E5D8CF /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = ApopthegmataApp/ApopthegmataApp.entitlements;
+				DEVELOPMENT_ASSET_PATHS = "\"ApopthegmataApp/Preview Content\"";
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = ApopthegmataApp/Info.plist;
+				"INFOPLIST_KEY_UIApplicationSceneManifest_Generation[sdk=iphoneos*]" = YES;
+				"INFOPLIST_KEY_UIApplicationSceneManifest_Generation[sdk=iphonesimulator*]" = YES;
+				"INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents[sdk=iphoneos*]" = YES;
+				"INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents[sdk=iphonesimulator*]" = YES;
+				"INFOPLIST_KEY_UILaunchScreen_Generation[sdk=iphoneos*]" = YES;
+				"INFOPLIST_KEY_UILaunchScreen_Generation[sdk=iphonesimulator*]" = YES;
+				"INFOPLIST_KEY_UIStatusBarStyle[sdk=iphoneos*]" = UIStatusBarStyleDefault;
+				"INFOPLIST_KEY_UIStatusBarStyle[sdk=iphonesimulator*]" = UIStatusBarStyleDefault;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = "UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown";
+				LD_RUNPATH_SEARCH_PATHS = "@executable_path/Frameworks";
+				"LD_RUNPATH_SEARCH_PATHS[sdk=macosx*]" = "@executable_path/../Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.apeiromont.apopthegmata;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SUPPORTS_MACCATALYST = NO;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 1;
+			};
+			name = Debug;
+		};
+		CAD1BDE42AD5E96F00E5D8CF /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = ApopthegmataApp/ApopthegmataApp.entitlements;
+				DEVELOPMENT_ASSET_PATHS = "\"ApopthegmataApp/Preview Content\"";
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = ApopthegmataApp/Info.plist;
+				"INFOPLIST_KEY_UIApplicationSceneManifest_Generation[sdk=iphoneos*]" = YES;
+				"INFOPLIST_KEY_UIApplicationSceneManifest_Generation[sdk=iphonesimulator*]" = YES;
+				"INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents[sdk=iphoneos*]" = YES;
+				"INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents[sdk=iphonesimulator*]" = YES;
+				"INFOPLIST_KEY_UILaunchScreen_Generation[sdk=iphoneos*]" = YES;
+				"INFOPLIST_KEY_UILaunchScreen_Generation[sdk=iphonesimulator*]" = YES;
+				"INFOPLIST_KEY_UIStatusBarStyle[sdk=iphoneos*]" = UIStatusBarStyleDefault;
+				"INFOPLIST_KEY_UIStatusBarStyle[sdk=iphonesimulator*]" = UIStatusBarStyleDefault;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = "UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown";
+				LD_RUNPATH_SEARCH_PATHS = "@executable_path/Frameworks";
+				"LD_RUNPATH_SEARCH_PATHS[sdk=macosx*]" = "@executable_path/../Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.apeiromont.apopthegmata;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SUPPORTS_MACCATALYST = NO;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 1;
+			};
+			name = Release;
+		};
+		CAD1BDE62AD5E96F00E5D8CF /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 2ZW87626ZJ;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
+				MACOSX_DEPLOYMENT_TARGET = 14.0;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = io.atha.apopthegmataTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = auto;
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator macosx";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/apopthegmata.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/apopthegmata";
+			};
+			name = Debug;
+		};
+		CAD1BDE72AD5E96F00E5D8CF /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 2ZW87626ZJ;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
+				MACOSX_DEPLOYMENT_TARGET = 14.0;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = io.atha.apopthegmataTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = auto;
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator macosx";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/apopthegmata.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/apopthegmata";
+			};
+			name = Release;
+		};
+		CAD1BDE92AD5E96F00E5D8CF /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 2ZW87626ZJ;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
+				MACOSX_DEPLOYMENT_TARGET = 14.0;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = io.atha.apopthegmataUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = auto;
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator macosx";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = apopthegmata;
+			};
+			name = Debug;
+		};
+		CAD1BDEA2AD5E96F00E5D8CF /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 2ZW87626ZJ;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
+				MACOSX_DEPLOYMENT_TARGET = 14.0;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = io.atha.apopthegmataUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = auto;
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator macosx";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = apopthegmata;
+			};
+			name = Release;
+		};
+		CAD1BE122AD5F85C00E5D8CF /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				ASSETCATALOG_COMPILER_WIDGET_BACKGROUND_COLOR_NAME = WidgetBackground;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = ApopthegmataWidget/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.apeiromont.apopthegmata.widget;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+			};
+			name = Debug;
+		};
+		CAD1BE132AD5F85C00E5D8CF /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				ASSETCATALOG_COMPILER_WIDGET_BACKGROUND_COLOR_NAME = WidgetBackground;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = ApopthegmataWidget/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.apeiromont.apopthegmata.widget;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		CAD1BDB52AD5E96D00E5D8CF /* Build configuration list for PBXProject "apopthegmata" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				CAD1BDE02AD5E96F00E5D8CF /* Debug */,
+				CAD1BDE12AD5E96F00E5D8CF /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		CAD1BDE22AD5E96F00E5D8CF /* Build configuration list for PBXNativeTarget "Apopthegmata" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				CAD1BDE32AD5E96F00E5D8CF /* Debug */,
+				CAD1BDE42AD5E96F00E5D8CF /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		CAD1BDE52AD5E96F00E5D8CF /* Build configuration list for PBXNativeTarget "AppTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				CAD1BDE62AD5E96F00E5D8CF /* Debug */,
+				CAD1BDE72AD5E96F00E5D8CF /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		CAD1BDE82AD5E96F00E5D8CF /* Build configuration list for PBXNativeTarget "AppUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				CAD1BDE92AD5E96F00E5D8CF /* Debug */,
+				CAD1BDEA2AD5E96F00E5D8CF /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		CAD1BE112AD5F85C00E5D8CF /* Build configuration list for PBXNativeTarget "ApopthegmataWidget" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				CAD1BE122AD5F85C00E5D8CF /* Debug */,
+				CAD1BE132AD5F85C00E5D8CF /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = CAD1BDB22AD5E96D00E5D8CF /* Project object */;
+}
