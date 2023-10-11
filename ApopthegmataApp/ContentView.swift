@@ -49,12 +49,21 @@ struct ContentView: View {
                     }) {
                         Image(systemName: "arrow.clockwise")
                     }.padding(.horizontal)
-                    Stepper(
-                        value: $fontSelection,
-                        in: 0...fonts.count-1
-                    ) {
-                        Text("")
-                    }.padding(.horizontal)
+                    Spacer()
+                    Button(action: {
+                        if fontSelection > 0 {
+                            fontSelection = fontSelection - 1
+                        }
+                    }) {
+                        Image(systemName: "backward")
+                    }
+                    Button(action: {
+                        if fontSelection < fonts.count-1 {
+                            fontSelection = fontSelection + 1
+                        }
+                    }) {
+                        Image(systemName: "forward")
+                    }
                 }.padding().ignoresSafeArea()
             }
         }
