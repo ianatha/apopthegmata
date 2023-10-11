@@ -9,7 +9,7 @@ let fonts = [
     "GFSBaskerville-Regular",
     "GFSGazis-Regular",
     
-    //    // 19th century
+    // 19th century
     "GFSDidotClassic",
     "GFSPorson-Regular",
     "GFSSolomos-Regular",
@@ -40,23 +40,31 @@ func withinQuoteIndex(x: Int) -> Int {
 }
 
 func randomQuoteIndex() -> Int {
-    Int(arc4random_uniform(UInt32(quotes.count)))
+    Int.random(in: 0..<quotes.count)
+}
+
+struct Q {
+    var f: String?
+    var t: String
+    var a: String?
 }
 
 let quotes = [
-    "άντρες, πεταμένα λεφτά",
-"""
+    Q(f: "GFSDecker-Normal", t: "αντρες, πεταμενα λεφτα", a: "Στυλιανός"),
+    Q(f: "GFSDidotClassic", t: "ἀνδρῶν γὰρ ἐπιφανῶν πᾶσα γῆ τάφος", a: "Θουκυδίδης"),
+    Q(f: "GFSSolomos-Regular", t: """
 Μὴν καταργεῖτε τὴν ὑπογεγραμμένη
 ἰδίως κάτω ἀπὸ τὸ ὠμέγα
 
 εἶναι κρίμα νὰ ἐκλείψει
 ἡ πιὸ μικρὴ ἀσέλγεια
 τοῦ ἀλφαβήτου μας
-""",
-    "ἀνδρῶν γὰρ ἐπιφανῶν πᾶσα γῆ τάφος",
-    "οὐκ ἐν τῷ πολλῷ τὸ εὖ",
-    "Ο άνθρωπος ό,τι μπορεί κι ο Θεός ό,τι θέλει.",
-    "Ό,τι γράφει η μοίρα μελανό, ο ήλιος δεν τ’ ασπρίζει.",
-    "Ο γέρος πάει ή από πέσιμο ή από χέσιμο.",
-    "Άγιος που δε θαυματουργεί, μηδέ δοξολογιέται."
+""", a: "Ντίνος Χριστιανόπουλος"),
+    Q(f: "GFSDidotClassic", t: "οὐκ ἐν τῷ πολλῷ τὸ εὖ"),
+    Q(f: "GFSOrpheusClassic", t: "φύσει γὰρ ἄνθρωπος ὃ βούλεται, τοῦτο καί οἴεται", a: "Ιούλιος Καίσαρας"),
+    Q(f: "GFSOrpheusClassic", t: "ὁ κόσμος ἀλλοίωσις, ὁ βίος ὑπόληψις", a: "Δημόκριτος"),
+    Q(f: "GFSOrpheusClassic", t: "Ο άνθρωπος ό,τι μπορεί κι ο Θεός ό,τι θέλει."),
+    Q(f: "GFSGazis-Regular", t: "Ό,τι γράφει η μοίρα μελανό, ο ήλιος δεν τ’ ασπρίζει."),
+    Q(f: "GFSDecker-Normal", t: "Ο γέρος πάει ή από πέσιμο ή από χέσιμο."),
+    Q(f: "GFSPhilostratos-Normal", t: "Άγιος που δε θαυματουργεί, μηδέ δοξολογιέται.")
 ]
