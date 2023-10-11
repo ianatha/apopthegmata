@@ -51,6 +51,7 @@ struct Q {
 
 let quotes = [
     Q(f: "GFSDecker-Normal", t: "αντρες, πεταμενα λεφτα", a: "Στυλιανός"),
+    Q(f: "GFSDecker-Normal", t: "ευλογησον"),
     Q(f: "GFSDidotClassic", t: "ἀνδρῶν γὰρ ἐπιφανῶν πᾶσα γῆ τάφος", a: "Θουκυδίδης"),
     Q(f: "GFSSolomos-Regular", t: """
 Μὴν καταργεῖτε τὴν ὑπογεγραμμένη
